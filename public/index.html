@@ -1,14 +1,55 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>R7 FrontEnd Test</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css" media="all">
-  </head>
-  <body>
-      <!-- let's code :D -->
+</head>
 
-    <script src="javascripts/main.js"></script> 
+<body>
+    <p class="copyright">front-end test- r7.com &copy;</p>
+
+    <!-- let's code :D -->
+    <div class="container">
+        <div class="row">
+            <article class="titles">
+                <img src="images/logo.png" alt="A Fazenda">
+                <div class="ranking">
+                    <h1>ranking</h1>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article id="participantes">
+                <ul>
+                    <li>
+                        <div class="img-participante picture" style="background: url('http://im.r7.com/record/files/2C96/1618/3F6E/369D/013F/72F6/B48C/5BBD/B%C3%A1rbaraEvans1.jpg')">
+                            <div class="position">1</div>
+                        </div>
+                        <div class="info-participante">
+                            <h2 class="jsonnome">Bárbara Evans</h2>
+                            <p class="jsondescricao">Modelo e filha de Monique Evans</p>
+                        </div>
+                        <div id="porcentagens">
+                            <div class="gostam">
+                                <p>gostam</p>
+                                <h3>37%</h3>
+                            </div>
+                            <div class="nao-gostam">
+                                <p>Não Gostam</p>
+                                <h3>37%</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </div>
+    <script src="javascripts/main.js"></script>
+
 </html>

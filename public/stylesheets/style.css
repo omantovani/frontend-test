@@ -1,5 +1,245 @@
 body {
-  text-align: center;
-  font-size: 12px;
-  font-family: "Arial, sans-serif";
+    background: #272727;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.container {
+    max-width: 342px;
+    margin: 0 auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* HEADER */
+
+.titles img {
+    position: absolute;
+    z-index: 9;
+    margin-left: -32px;
+}
+
+.ranking {
+    background: #fff;
+    border-radius: 3px;
+    padding: 14px 44px;
+    text-align: right;
+    text-transform: uppercase;
+    float: right;
+    width: 172px;
+    position: relative;
+    margin-left: 82px;
+    margin-top: 126px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -3px;
+    line-height: 26px;
+    margin: 0;
+}
+
+
+/* PARTICIPANTES */
+
+#participantes {
+    margin-top: 14px;
+    width: 100%;
+}
+
+#participantes ul {
+    background: #fff;
+    border-radius: 3px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#participantes ul li {
+    padding: 18px 15px;
+    border-radius: 3px;
+    display: inline-block;
+    width: calc(100% - 30px);
+}
+
+#participantes ul li:nth-child(even) {
+    background: #eee
+}
+
+#participantes ul li:nth-child(odd) {
+    background: #fff
+}
+
+#participantes ul li .img-participante {
+    background-size: cover !important;
+    background-position: center center;
+    border-radius: 100%;
+    border: 3px solid #ba3638;
+    float: left;
+    height: 60px;
+    margin-right: 20px;
+    width: 60px;
+}
+
+#participantes ul li .info-participante {
+    margin: 15px 0;
+}
+
+.position {
+    background: #fff;
+    border: thin solid #707070;
+    border-radius: 100%;
+    color: #707070;
+    font-size: 12px;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-top: 44px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 20px;
+}
+
+#participantes ul li h2 {
+    color: #ba3638;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    margin: 0;
+}
+
+#participantes ul li p {
+    color: #909090;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+}
+
+
+/* PARTICIPANTES HOVER */
+
+#participantes ul li:hover {
+    background: #ba3638;
+    border-radius: 0;
+}
+
+#participantes ul li:hover h2 {
+    color: #fff
+}
+
+#participantes:hover ul li .info-participante p {
+    color: #330d0e
+}
+
+#participantes ul li:hover img {
+    border: 3px solid #fff;
+}
+
+#participantes ul li:hover .img-participante {
+    border: 3px solid #fff;
+}
+
+
+/* PORCENTAGENS */
+
+#porcentagens {
+    display: none;
+}
+
+#participantes ul li:hover #porcentagens {
+    display: inline-block;
+}
+
+#porcentagens:before {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid #fff;
+    content: "";
+    display: inline-block;
+    float: left;
+    height: 0;
+    margin-top: 18px;
+    vertical-align: middle;
+    width: 0;
+}
+
+#porcentagens {
+    position: absolute;
+    right: 50%;
+    margin-right: -341px;
+    margin-top: -56px;
+}
+
+#porcentagens .gostam {
+    float: left;
+    width: 66px;
+}
+
+#porcentagens .nao-gostam {
+    float: left;
+    width: 90px;
+}
+
+#porcentagens .gostam p,
+#porcentagens .nao-gostam p {
+    background: #ba3638;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 9px;
+    padding: 5px 10px;
+    line-height: 8px;
+    margin: 0;
+}
+
+#porcentagens .gostam p {
+    border-right: thin solid #6a1e1f;
+    border-radius: 3px 0 0 0;
+}
+
+#porcentagens .nao-gostam p {
+    border-left: thin solid #c57071;
+    border-radius: 0 3px 0 0;
+}
+
+#porcentagens .gostam h3 {
+    border-right: thin solid #8c8b8b;
+    border-radius: 0 0 0 3px;
+}
+
+#porcentagens .nao-gostam h3 {
+    border-left: thin solid #f8f7f7;
+    border-radius: 0 0 3px 0;
+}
+
+#porcentagens .gostam h3,
+#porcentagens .nao-gostam h3 {
+    background: #fff;
+    color: #909090;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
 }

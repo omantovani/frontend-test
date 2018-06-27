@@ -1,12 +1,11 @@
 {
   "version": "0.1.1",
   "box_name": "A Fazenda - Ranking",
-  "data": [
-    {
+  "data": [{
       "__id": "f8c3500f39017602234a031caa64a8b4",
       "timestamp": 1408396531382,
       "name": "Rita Cadillac",
-      "description": "Cracrete n&ordm;1",
+      "description": "Chacrete n&ordm; 1",
       "picture": "http://im.r7.com/record/files/2C96/1617/3F6E/32AE/013F/72F9/AD72/3CE1/RitaCadillac1.jpg",
       "positive": 51638022,
       "negative": 18143089
