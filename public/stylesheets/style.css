@@ -86,7 +86,7 @@ h1 {
 
 #participantes ul li .img-participante {
     background-size: cover !important;
-    background-position: center center;
+    background-position: center center !important;
     border-radius: 100%;
     border: 3px solid #ba3638;
     float: left;
